@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Focused Work Stopwatch</title>
+</head>
+<body>
+<h1>Focused Work Stopwatch</h1>
+<div id="stopwatch">00:00</div>
+
+<h2>Set Alarms</h2>
+<div>
+	<input type="text" id="alarmInput" placeholder="Enter time (mm:ss)">
+	<button onclick="addAlarm()">Add Alarm</button>
+</div>
+
+<h3>Alarms:</h3>
+<ul id="alarmsList"></ul>
+
+<h2>Set End Alarm</h2>
+<input type="text" id="endAlarmInput" placeholder="Enter time (mm:ss)">
+
+<button onclick="startStopwatch()">Start</button>
+<button onclick="pauseStopwatch()">Pause</button>
+<button onclick="stopStopwatch()">Stop</button>
+
+<h2>Logs</h2>
+<ul id="logs"></ul>
+
+<script src="app.js"></script>
+</body>
+</html>
